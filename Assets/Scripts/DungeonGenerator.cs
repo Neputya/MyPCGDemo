@@ -9,7 +9,7 @@ public class DungeonGenerator : MonoBehaviour
     public int boundsWidth = 50; // 区域宽度
     public int boundsHeight = 50; // 区域高度
     public List<Room> roomList = new(); // 存储所有生成的房间
-    public List<Corridor> corridorList;
+    public List<Corridor> corridorList = new();
     public int minRoomWidth = 5; // 最小房间大小
     public int minRoomHeight = 5; // 最小房间大小
     public int minSpaceWidth = 15; // 最小空间宽度

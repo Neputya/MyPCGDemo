@@ -65,7 +65,7 @@ public class RoomGenerator
     // 在给定节点的区域内生成一个房间
     private void GenerateRoom(QuadtreeNode space)
     {
-        Room room = new(roomPrefab, wallPrefab, space, minRoomWidth, minRoomHeight, minSpaceWidth, minSpaceHeight);
+        Room room = new(roomPrefab, wallPrefab, space, minRoomWidth, minRoomHeight);
         space.room = room;
         roomList.Add(room); // 将生成了房间的空间添加到列表
     }

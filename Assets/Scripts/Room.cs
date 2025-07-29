@@ -20,16 +20,12 @@ public class Room
 
     private readonly int minRoomWidth;
     private readonly int minRoomHeight;
-    private readonly int minSpaceWidth;
-    private readonly int minSpaceHeight;
 
     public Room(GameObject prefab, GameObject wallPrefab, QuadtreeNode space, int minRoomWidth,
-                int minRoomHeight, int minSpaceWidth, int minSpaceHeight)
+                int minRoomHeight)
     {
         this.minRoomWidth = minRoomWidth;
         this.minRoomHeight = minRoomHeight;
-        this.minSpaceWidth = minSpaceWidth;
-        this.minSpaceHeight = minSpaceHeight;
         Initialize(prefab, wallPrefab, space.bounds.x, space.bounds.y, space.bounds.width, space.bounds.height);
     }
 

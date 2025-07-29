@@ -24,7 +24,7 @@ public class QuadtreeVisualizer : MonoBehaviour
             DrawRectAsLines(node.bounds);
         }
         // Debug.Log("DrawHappened!!");
-        //drawGizmos = false; // 只绘制一次
+        drawGizmos = false; // 只绘制一次
     }
 
     private void GetAllNodes(QuadtreeNode node)
